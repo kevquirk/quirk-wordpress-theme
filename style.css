@@ -1415,10 +1415,9 @@ a.button {
 	border-top: 1px solid var(--border);
 }
 
-.pagination a {
-	padding: .5em .5em;
+.pagination {
+  margin-bottom: 5em;
 	transition: 0.4s;
-	font-size: 16px;
 }
 
 .alignleft {
