@@ -1,0 +1,11 @@
+{
+    "name": "Quirk",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "description": "A basic theme that is based on the Susty theme",
+    "homepage": "https://kevq.uk",
+    "keywords": ["wordpress"],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

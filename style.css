@@ -1,0 +1,1644 @@
+/*!
+Theme Name: Quirk
+Theme URI: https://kevq.uk
+Author: Kev Quirk
+Author URI: https://kevq.uk
+Description: A theme for WordPress focused on performance and sustainability.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: susty
+Tags:
+*/
+
+/* Global colour variables */
+ :root {
+    --accent: #01579B;
+    --main: #333333;
+    --hover: #B3E5FC;
+    --light: #555;
+    --lighter: #f3f3f3;
+		--border: #e6e6e6;
+   	--bg: #ffffff;
+ 		--code: #f3f3f3
+ }
+
+ /* Define colours for auto dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+			--accent: #B3E5FC;
+			--main: #f3f3f3;
+      --hover: #666666;
+			--light: #ececec;
+			--lighter: #666;
+			--border: #e6e6e6;
+			--bg: #333333;
+			--code: #4d4d4d
+    }
+}
+
+/* Main typography elements */
+
+/* Set fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.response,
+body,
+button,
+a.button,
+input,
+select,
+optgroup,
+textarea,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+header#masthead > a,
+.menu-items a,
+.meta-entry,
+#colophon p,
+#webmention-source,
+.logged-in-as,
+.comment-form-comment,
+.comment-notes,
+.comment-content p,
+.comment-reply-link,
+.comment-metadata,
+.comment-author.vcard.h-card.u-author,
+label,
+textarea,
+input,
+#author,
+#email,
+#url,
+p.has-background {
+	font-family: "fira", helvetica, arial, sans-serif;
+	font-variant-ligatures: no-common-ligatures;
+}
+
+p,
+li,
+.response blockquote {
+	font-family: "merriweather", Georgia, serif;
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+	font-family: "Courier New", Courier, monospace;
+}
+
+body {
+	background-color: var(--bg);
+	font-size: 17px;
+	margin: 0;
+	color: var(--main);
+	 }
+
+/**
+ * Correct the font size and margin on `h1` elements with `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1,
+h1.notes-title {
+	font-size: 38px;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	background: var(--code);
+	color: var(--main);
+	border-radius: 4px;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+	white-space: pre-wrap;
+	max-height: 650px;
+}
+
+.select-all {
+		user-select: all;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+.wp-block-image img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wp-block-image figcaption, figcaption {
+	margin-top: 0;
+	color: var(--light);
+	font-size: 0.9rem;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Formats the feature image correctly */
+.attachment-post-thumbnail {
+    width: 100%;
+    margin: 1em 0 1.5em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hides feature image from the homepage only */
+body.home .attachment-post-thumbnail,
+body.category .attachment-post-thumbnail,
+body.search .attachment-post-thumbnail,
+body.archive .attachment-post-thumbnail {
+		display: none;
+}
+
+
+/* Indieweb Stuff
+	 ========================================================================== */
+
+#home-about {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a.blogroll {
+	border: none;
+	transition: 0.2s;
+}
+
+a.blogroll:hover, a.blogroll:active {
+	opacity: 0.7;
+	transition: 0.2s;
+	border: none;
+}
+
+ul.social {
+	list-style: none;
+	margin-bottom: 4em;
+	padding-left: 0;
+}
+
+ul.social li {
+	display: inline;
+	padding-right: 10px;
+}
+
+ul.social li a, a:visited {
+	background: none;
+	color: var(--main);
+
+}
+
+ul.social li a:hover, a:active {
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+.response {
+	margin: 1.5em 0 0 0;
+  padding: 5px;
+  font-size: 1.2em;
+  border-bottom: 0;
+	background: var(--code);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.response header {
+	margin: .5em 0 .5em .5em;
+}
+
+.response svg {
+	color: var(--main);
+}
+
+.response blockquote {
+    margin-left: 25px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.mention-list li {
+    width: 40px;
+    padding: 0;
+}
+
+.mention-list li img {
+    height: 40px;
+    width: 40px;
+}
+
+.mention-list {
+  padding-left: 0;
+}
+
+.avatar.avatar-64.photo.avatar-default.local-avatar:hover {
+    opacity: 0.7;
+    transition: .2s;
+}
+
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+.wp-block-search .wp-block-search__input {
+	max-width: 100%;
+}
+
+.search-field {
+	width: 60%;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--main);
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+}
+
+h2 {
+	margin-top: 2em;
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+.la:hover,
+.la:active,
+.la:visited,
+.lab:hover,
+.lab:active,
+.lab:visited,
+.las:hover,
+.las:active,
+.las:visited {
+    color: var(--main);
+		transition: 0.5s;
+}
+
+p.feature-credit {
+	color: var(--light);
+	font-style: italic;
+	font-size: 14px;
+}
+
+dfn, cite, i {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+em {
+	font-style: italic;
+}
+
+blockquote {
+	margin-left: 2em;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	padding: .4rem .8rem;
+	border-left: .35rem solid var(--accent);
+	color: var(--light);
+	font-style: italic;
+  font-size: 16px;
+}
+
+cite {
+  font-size: 16px;
+  color: var(--light);
+  font-style: normal;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+
+
+code, kbd, tt, var {
+	color: var(--main);
+	background: var(--code);
+	padding: 2px 7px 2px 7px;
+	border-radius: 4px;
+}
+
+pre code:not(.hljs):not([class*="language-"]) {
+    background: var(--code);
+    color: var(--main);
+    line-height: 1.25;
+    border-radius: 4px;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+	box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+.children {
+    list-style: none;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.wp-block-table table {
+    border: 1px solid;
+}
+
+.wp-block-table.is-style-stripes {
+    border-bottom: none;
+}
+
+td {
+	border: 1px dotted;
+}
+
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: var(--accent);
+  color: var(--bg);
+	border: none;
+	border-radius: 4px;
+	line-height: 1;
+	padding: .8em .8em;
+	font-size: 0.8em;
+	transition: 0.4s;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: var(--main);
+	color: var(--bg);
+}
+
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: var(--main);
+	border: 1px solid var(--light);
+	border-radius: 4px;
+	padding: 3px;
+	background: transparent;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: var(--main);
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+
+a,
+a:visited,
+article a,
+p.feature-credit a,
+p.feature-credit a:visited,
+.menu-items a,
+.response a {
+	text-decoration: none;
+  background:
+     linear-gradient(
+       to bottom, var(--hover) 0%,
+       var(--hover) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  transition: background-size .4s;
+  color: var(--accent);
+  padding: 3px;
+  border-radius: 4px;
+}
+
+a:hover,
+a:focus,
+a:active,
+article a:hover,
+article a:focus,
+article a:active,
+p.feature-credit a:hover,
+p.feature-credit a:active,
+.menu-items a:hover,
+.menu-items a:active,
+.response a:hover {
+	text-decoration: none;
+  color: var(--accent);
+  background-size: 4px 50px;
+}
+
+a#susty-back-link {
+	padding: .3em .6em;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+a.to-top {
+	background: none;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 4px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 2em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+  background: none;
+  padding: 0;
+}
+
+
+
+ol.comment-list {
+    list-style: none;
+    margin-bottom: 60px;
+    padding-top: 10px;
+		padding-left: 0;
+		padding-
+}
+
+.comment-content {
+	background: var(--code);
+	margin-left: 40px;
+	padding: 5px 18px 0px;
+	border-radius: 15px;
+	position: relative;
+}
+
+.comment-content p {
+	font-size: 14px;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.comment-author.vcard.h-card.u-author,
+.dt-published {
+	color: var(--light);
+}
+
+.comment-author.vcard.h-card.u-author a,
+.u-url {
+	color: var(--main);
+	background: none;
+	transition: .4s;
+}
+
+.comment-author.vcard.h-card.u-author a:hover {
+	color: var(--main);
+	background: none;
+}
+
+.dt-published {
+	font-size: 14px;
+}
+
+.comment-reply-link {
+    font-size: 14px;
+    background: none;
+    color: var(--light) !important;
+		transition: .4s;
+}
+
+textarea#comment {
+	background-color: #fff;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  height: 96px;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 5px;
+}
+
+input#author,
+input#email {
+	background-color: #fff;
+	border: 2px solid var(--border);
+	border-radius: 4px;
+	padding-left: 5px;
+}
+
+.comment-reply-link:hover {
+	color: var(--main) !important;
+}
+
+.logged-in-as a {
+	font-size: 14px;
+	background: none !important;
+}
+
+img.avatar {
+	float: left;
+	margin-right: 16px;
+	border-radius: 4px;
+	margin-top: 3px;
+}
+
+.reply {
+  margin-bottom: 2em;
+  margin-left: 40px;
+}
+
+#cancel-comment-reply-link {
+  background: none;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Format subscribe form div */
+.post-newsletter {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--code);
+  padding: 25px;
+  outline: dashed 2px var(--main);
+  outline-offset: -8px;
+  margin: 1em 0;
+}
+
+.post-newsletter h2 {
+    margin-top: .5em;
+}
+
+.swp-form-cont-2222 input[type="text"] {
+  background: #fff;
+  font-size: 14px;
+}
+
+.swp-form-cont-2222 .field-submit {
+  color: var(--bg) !important;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+header#masthead {
+	display: flex;
+	align-items: center;
+	max-width: 55em;
+	margin: 0 auto;
+	margin-bottom: 3em;
+	padding: 0 1em 1.5em 1em;
+	border-bottom: 1px solid var(--border);
+}
+
+header#masthead h1, header#masthead p {
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: bold;
+	flex: 1;
+	margin: 0;
+}
+
+header#masthead a {
+	border-bottom: unset;
+	font-size: 30px;
+	background: none;
+	transition: .4s;
+}
+
+header#masthead a:hover, header#masthead a:active, header#masthead a:focus {
+	text-decoration: none;
+	opacity: .7;
+}
+
+a.head-search,
+a.header-logo {
+  color: var(--main) !important;
+}
+
+a.menu, a.menu:visited {
+  border: 2px solid var(--accent) !important;
+  font-size: 16px !important;
+  background: none;
+  transition: .4s;
+}
+
+a.menu:hover, a.menu:active {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+  opacity: 1 !important;
+}
+
+span.logo_dot {
+    background-color: var(--accent);
+    font-size: 27px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+header#masthead > a {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 .5em 0 0;
+	transition: 0.4s;
+	line-height: 1.2;
+	color: var(--accent);
+}
+
+header#masthead > a > svg {
+	width: 1.8em;
+	height: 1.8em;
+}
+
+.logo {
+	flex: 0 0 2.4em;
+	text-align: center;
+	line-height: 0;
+	margin-right: .5em;
+}
+
+.logo svg {
+	width: 2.4em;
+	height: 2.4em;
+}
+
+svg * {
+	width: 100%;
+	height: 100%;
+}
+
+/*--------------------------------------------------------------
+## Content
+--------------------------------------------------------------*/
+#content {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+#primary-menu, .sub-menu {
+    list-style: none;
+}
+
+.post-title a {
+	font-size: 30px;
+	color: var(--main);
+	background: none;
+	transition: 0.2s;
+	line-height: 1.4;
+	padding: 0;
+}
+
+.post-title h1, .post-title h2 {
+	margin: 0 0 .1em 0;
+	line-height: 1.2em;
+}
+
+.post-title a:hover, .post-title a:focus, .post-title a:active, .entry-title a:hover, .entry-title a:visited {
+	color: var(--main);
+	opacity: 0.7;
+	border: none;
+	transition: 0.2s;
+}
+
+.entry-title a {
+	color: var(--main);
+	margin: 0 0 .1em 0;
+	border: none;
+	line-height: 1.2em;
+	transition: 0.2s;
+}
+
+article > header > h1, article > header > h2 {
+	font-size: 2.4em;
+	line-height: 1em;
+	margin: 0 0 .4em 0;
+}
+
+.entry-meta,
+.cat-links,
+.comments-link {
+	color: var(--light);
+	font-size: 14px;
+}
+
+.entry-meta a {
+	color: var(--light);
+	border: none;
+}
+
+.entry-meta a:hover {
+	color: var(--light);
+	border-color: var(--light);
+}
+
+.cat-links {
+	display: block;
+}
+
+.button, .button:visited {
+	padding: .8em .8em;
+	margin: 0 .5em 0 0;
+	background: var(--accent);
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.4s;
+	line-height: 3rem;
+	white-space: nowrap;
+}
+
+.button:hover, .button:active, .button:focus {
+	background: var(--main);
+	color: #fff;
+}
+
+a.button {
+	font-weight: normal;
+}
+
+.cat-links a, .comments-link a, .edit-link a {
+	margin: 0 .2em 0 .2em;
+	padding: 0;
+	background: none;
+	color: var(--light);
+	transition: 0.5s;
+}
+
+.edit-link a {
+	font-size: 0.8em;
+}
+
+.cat-links a:hover, .comments-link a:hover, .edit-link a:hover {
+	border-color: var(--light);
+	color: var(--main);
+}
+
+.post-links {
+	border-top: 1px solid var(--border);
+}
+
+.pagination a {
+	padding: .5em .5em;
+	transition: 0.4s;
+	font-size: 16px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.comment-title {
+    margin-top: -1em;
+		padding-top: 1em;
+}
+
+.comment-notice {
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+	padding-bottom: 2em;
+}
+
+#webmention-source {
+    width: 100%;
+    border: 3px solid var(--border);
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+#webmention-form {
+    padding-top: 1em;
+}
+
+footer#colophon {
+	max-width: 55em;
+	margin: 3em auto;
+	text-align: center;
+	padding: 0 1em;
+	font-size: 15px;
+	border-top: 1px solid var(--border);
+}
+
+/* Remove border from banner add link */
+.cf-wrapper,
+.cf-wrapper:hover {
+    border: none;
+}
+
+/** Custom colours for Gutenberg editor **/
+
+p.has-background {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2em 0;
+}
+
+/** Blue colours **/
+.has-blue-background-color {
+	background-color: #01579B !important;
+}
+.has-blue-color {
+	color: #01579B;
+}
+.has-blue-color a {
+	color: #01579B;
+	border-bottom: 2px solid #01579B !important;
+  background: none;
+  border-radius: 0;
+}
+.has-blue-color a:hover {
+	color: #01579B;
+	border-bottom: 2px dotted #01579B !important;
+}
+.has-blue-color code {
+	color: #01579B;
+	background: #ffffff;
+}
+
+/** Green colours **/
+.has-green-background-color {
+	background-color: #345f41 !important;
+}
+.has-green-color {
+	color: #345f41;
+}
+.has-green-color a {
+	color: #345f41;
+	border-bottom: 2px solid #345f41 !important;
+  background: none;
+  border-radius: 0;
+}
+.has-green-color a:hover {
+	color: #345f41;
+	border-bottom: 2px dotted #345f41 !important;
+}
+.has-green-color code {
+	color: #345f41;
+	background: #ffffff;
+}
+
+/** Orange colours **/
+.has-orange-background-color {
+	background-color: #ffa800 !important;
+	color: var(--main) !important;
+}
+.has-orange-color {
+	color: #ffa800;
+}
+.has-orange-color a {
+	color: #ffa800;
+	border-bottom: 2px solid #ffa800 !important;
+  background: none;
+  border-radius: 0;
+}
+.has-orange-color a:hover {
+	color: #ffa800;
+	border-bottom: 2px dotted #ffa800 !important;
+}
+.has-orange-color code {
+	color: #ffa800;
+	background: #333333;
+}
+
+/** Red colours **/
+.has-red-background-color {
+	background-color: #c1392b !important;
+}
+.has-red-color {
+	color: #c1392b;
+}
+.has-red-color a {
+	color: #c1392b;
+	border-bottom: 2px solid #c1392b !important;
+  background: none;
+  border-radius: 0;
+}
+.has-red-color a:hover {
+	color: #c1392b;
+	border-bottom: 2px dotted #c1392b !important;
+}
+.has-red-color code {
+	color: #c1392b;
+	background: #ffffff;
+}
+
+/** Grey colours **/
+.has-grey-background-color {
+	background-color: #333333 !important;
+	border: 1px solid;
+}
+.has-grey-color {
+	color: #333333 !important;
+}
+.has-grey-color a, .has-grey-color a:visited {
+	color: #333333;
+	border-bottom: 2px solid #333333 !important;
+  background: none;
+  border-radius: 0;
+}
+.has-grey-color a:hover {
+	color: #333333;
+	border-bottom: 2px solid #333333 !important;
+}
+.has-grey-color code {
+	color: #333333;
+	background: #ffffff;
+}
+
+/** White colours **/
+.has-white-background-color {
+	background-color: #ffffff !important;
+	border: 1px solid --var(main);
+}
+.has-white-color {
+	color: #ffffff;
+}
+.has-white-color a, .has-white-color a:visited {
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff !important;
+  background: none;
+  border-radius: 0;
+}
+.has-white-color a:hover {
+	color: #ffffff;
+	border-bottom: 2px dotted #ffffff !important;
+}
+.has-white-color code {
+	color: #333333;
+	background: #f3f3f3;
+}
+
+/* Format the old posts notice */
+.old-notice {
+    padding: 20px 30px;
+    background-color: #01579B;
+    margin-bottom: 1em;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.old-notice a, .old-notice a:visited {
+		color: #fff;
+		border-color: #fff;
+    background: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    padding: 0;
+}
+
+.old-notice a:hover, .old-notice a:active {
+		color: #fff;
+		border-color: #fff;
+    border-bottom: 2px dotted #fff;
+}
+
+/* fix advert link */
+#cf[data-template][data-theme="light"] a,
+#cf[data-template][data-theme="light"] a:hover {
+  background: #01579B !important;
+}
+#cf[data-template][data-theme="dark"], #cf[data-template][data-theme="dark"] *, #cf[data-template][data-theme="light"], #cf[data-template][data-theme="light"] * {
+  font-family: "fira", helvetica, arial, sans-serif;
+}
