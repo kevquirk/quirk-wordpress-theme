@@ -1066,6 +1066,7 @@ textarea#comment {
 
 input#author,
 input#email {
+  font-size: 15px;
 	background-color: var(--bg);
 	border: 2px solid var(--border);
 	border-radius: 4px;
