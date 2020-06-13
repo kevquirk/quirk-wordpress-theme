@@ -50,7 +50,7 @@ get_header();
 						<!-- Links -->
 								<a class="u-url u-uid" href="https://kevq.uk"></a>
 								<a class="u-email" rel="me" href="mailto:email@me.kevq.uk"></a>
-								<a class="u-url" rel="me" href="https://fosstodon.org/kev"></a>
+								<a class="u-url" rel="me" href="https://fosstodon.org/@kev"></a>
 								<a class="u-url" rel="me" href="https://twitter.com/kevquirk"></a>
 								<a class="u-url" rel="me" href="https://keybase.io/kevq"></a>
 
