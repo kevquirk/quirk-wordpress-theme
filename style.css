@@ -75,7 +75,8 @@ input,
 #author,
 #email,
 #url,
-p.has-background {
+p.has-background,
+.comment-awaiting-moderation {
 	font-family: "fira", helvetica, arial, sans-serif;
 	font-variant-ligatures: no-common-ligatures;
 }
@@ -1071,6 +1072,7 @@ input#email {
 	border: 2px solid var(--border);
 	border-radius: 4px;
 	padding-left: 5px;
+  width: 100%
 }
 
 .comment-reply-link:hover {
@@ -1098,6 +1100,14 @@ img.avatar {
   background: none;
   font-size: 14px;
   font-weight: normal;
+}
+
+#email-notes, #commentform label, p.comment-notes {
+    display: none;
+}
+
+.comment-awaiting-moderation {
+    font-weight: bold;
 }
 
 /* Format subscribe form div */

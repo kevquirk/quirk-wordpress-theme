@@ -209,6 +209,39 @@ function unset_url_field($fields){
        return $fields;
 }
 
+/**
+ * Comment Form Placeholder Comment Field
+ */
+ function placeholder_comment_form_field($fields) {
+    $replace_comment = __('What would you like to say?', 'yourdomain');
+
+    $fields['comment_field'] = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) .
+    '</label><textarea id="comment" name="comment" cols="45" rows="8" placeholder="'.$replace_comment.'" aria-required="true"></textarea></p>';
+
+    return $fields;
+ }
+add_filter( 'comment_form_defaults', 'placeholder_comment_form_field' );
+
+/**
+ * Comment Form Placeholder Author & Email
+ */
+ function placeholder_author_email_url_form_fields($fields) {
+    $replace_author = __('Your name (required)', 'yourdomain');
+    $replace_email = __('Your email (required)', 'yourdomain');
+
+    $fields['author'] = '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'yourdomain' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+                    '<input id="author" name="author" type="text" placeholder="'.$replace_author.'" value="' . esc_attr( $commenter['comment_author'] ) . '" size="20"' . $aria_req . ' /></p>';
+
+    $fields['email'] = '<p class="comment-form-email"><label for="email">' . __( 'Email', 'yourdomain' ) . '</label> ' .
+    ( $req ? '<span class="required">*</span>' : '' ) .
+    '<input id="email" name="email" type="text" placeholder="'.$replace_email.'" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    '" size="30"' . $aria_req . ' /></p>';
+
+    return $fields;
+}
+add_filter('comment_form_default_fields','placeholder_author_email_url_form_fields');
+
+
 // Change Gutenberg to use a custom style
 add_theme_support('editor-styles');
 add_editor_style( 'style-editor.css' );
