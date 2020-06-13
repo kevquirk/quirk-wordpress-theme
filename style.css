@@ -1102,7 +1102,10 @@ img.avatar {
   font-weight: normal;
 }
 
-#email-notes, #commentform label, p.comment-notes {
+#email-notes,
+#commentform label,
+p.comment-note,
+.comment-form-comment label {
     display: none;
 }
 
