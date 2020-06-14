@@ -97,7 +97,6 @@ var {
 
 body {
 	background-color: var(--bg);
-	font-size: 17px;
 	margin: 0;
 	color: var(--main);
 	 }
@@ -109,7 +108,7 @@ body {
 
 h1,
 h1.notes-title {
-	font-size: 38px;
+	font-size: 2.1em;
 	margin: 0.67em 0;
 }
 
@@ -309,7 +308,7 @@ ul.social li a:hover, a:active {
 
 .response blockquote {
     margin-left: 25px;
-    font-size: 16px;
+    font-size: 0.75em;
     line-height: 1.7;
 }
 
@@ -550,7 +549,7 @@ select,
 optgroup,
 textarea {
 	color: var(--main);
-	font-size: 18px;
+	font-size: 1.15em;
 	line-height: 1.7;
 }
 
@@ -564,23 +563,23 @@ h2, h3, h4, h5, h6 {
 
 h2 {
 	margin-top: 2em;
-	font-size: 32px;
+	font-size: 1.75em;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 1.5em;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 1.3em;
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 1.1em;
 }
 
 h6 {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .la:hover,
@@ -594,12 +593,6 @@ h6 {
 .las:visited {
     color: var(--main);
 		transition: 0.5s;
-}
-
-p.feature-credit {
-	color: var(--light);
-	font-style: italic;
-	font-size: 14px;
 }
 
 dfn, cite, i {
@@ -619,11 +612,11 @@ blockquote {
 	border-left: .35rem solid var(--accent);
 	color: var(--light);
 	font-style: italic;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 cite {
-  font-size: 16px;
+  font-size: 0.9em;
   color: var(--light);
   font-style: normal;
 }
@@ -904,7 +897,7 @@ a.to-top {
 	clip-path: none;
 	color: #21759b;
 	display: block;
-	font-size: 14px;
+	font-size: 0.75em;
 	font-size: 0.875rem;
 	font-weight: bold;
 	height: auto;
@@ -1020,7 +1013,7 @@ ol.comment-list {
 }
 
 .comment-content p {
-	font-size: 14px;
+	font-size: 0.75em;
 }
 
 .bypostauthor {
@@ -1045,11 +1038,11 @@ ol.comment-list {
 }
 
 .dt-published {
-	font-size: 14px;
+	font-size: 0.75em;
 }
 
 .comment-reply-link {
-    font-size: 14px;
+    font-size: 0.75em;
     background: none;
     color: var(--light) !important;
 		transition: .4s;
@@ -1060,14 +1053,14 @@ textarea#comment {
   border: 2px solid var(--border);
   border-radius: 4px;
   height: 96px;
-  font-size: 15px;
+  font-size: 0.85em;
   line-height: 24px;
   padding-left: 5px;
 }
 
 input#author,
 input#email {
-  font-size: 15px;
+  font-size: 0.85em;
 	background-color: var(--bg);
 	border: 2px solid var(--border);
 	border-radius: 4px;
@@ -1080,7 +1073,7 @@ input#email {
 }
 
 .logged-in-as a {
-	font-size: 14px;
+	font-size: 0.75em;
 	background: none !important;
 }
 
@@ -1098,7 +1091,7 @@ img.avatar {
 
 #cancel-comment-reply-link {
   background: none;
-  font-size: 14px;
+  font-size: 0.75em;
   font-weight: normal;
 }
 
@@ -1133,7 +1126,7 @@ p.comment-note,
   background: var(--bg);
   color: var(--main) !important;
   border: 2px solid var(--border) !important;
-  font-size: 14px;
+  font-size: 0.85em;
 }
 
 .swp-form-cont-2222 .field-submit {
@@ -1253,7 +1246,7 @@ header#masthead h1, header#masthead p {
 
 header#masthead a {
 	border-bottom: unset;
-	font-size: 30px;
+	font-size: 1.65em;
 	background: none;
 	transition: .4s;
 }
@@ -1270,7 +1263,7 @@ a.header-logo {
 
 a.menu, a.menu:visited {
   border: 2px solid var(--accent) !important;
-  font-size: 16px !important;
+  font-size: 0.9em !important;
   background: none;
   transition: .4s;
 }
@@ -1283,7 +1276,7 @@ a.menu:hover, a.menu:active {
 
 span.logo_dot {
     background-color: var(--accent);
-    font-size: 27px;
+    font-size: 1.5em;
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -1292,7 +1285,7 @@ span.logo_dot {
 
 header#masthead > a {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 1em;
 	margin: 0 .5em 0 0;
 	transition: 0.4s;
 	line-height: 1.2;
@@ -1335,7 +1328,7 @@ svg * {
 }
 
 .post-title a {
-	font-size: 30px;
+	font-size: 0.95em;
 	color: var(--main);
 	background: none;
 	transition: 0.2s;
@@ -1357,6 +1350,7 @@ svg * {
 
 .entry-title a {
 	color: var(--main);
+  background: none;
 	margin: 0 0 .1em 0;
 	border: none;
 	line-height: 1.2em;
@@ -1373,7 +1367,7 @@ article > header > h1, article > header > h2 {
 .cat-links,
 .comments-link {
 	color: var(--light);
-	font-size: 14px;
+	font-size: 0.75em;
 }
 
 .entry-meta a {
@@ -1458,7 +1452,7 @@ a.button {
 #webmention-source {
     width: 100%;
     border: 3px solid var(--border);
-    font-size: 15px;
+    font-size: 0.85em;
     padding-left: 5px;
 }
 
@@ -1471,7 +1465,7 @@ footer#colophon {
 	margin: 3em auto;
 	text-align: center;
 	padding: 0 1em;
-	font-size: 15px;
+	font-size: 0.85em;
 	border-top: 1px solid var(--border);
 }
 
