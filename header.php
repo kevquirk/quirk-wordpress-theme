@@ -36,17 +36,17 @@
 		<?php
 		if ( is_front_page() && is_home() && ! get_query_var( 'menu' ) ) :
 			?>
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Kev Quirk</a><span class="logo_dot"></span></h1>
+			<h1><a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Kev Quirk</a><span class="logo_dot"></span></h1>
 			<?php
 		else :
 			?>
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Kev Quirk</a><span class="logo_dot"></span></h1>
+			<h1><a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Kev Quirk</a><span class="logo_dot"></span></h1>
 			<?php
 		endif;
 		if ( has_nav_menu( 'menu-1' ) ) :
 			if ( get_query_var( 'menu' ) ) :
 				?>
-				<a id="susty-back-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&#x2716;<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'susty' ); ?></span></a>
+				<a class="menu" id="susty-back-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Close<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'susty' ); ?></span></a>
 				<script>
 					var susty_home_url = '<?php echo esc_url( home_url( '/' ) ); ?>';
 					if ( 0 === document.referrer.indexOf( susty_home_url ) ) {
@@ -57,19 +57,11 @@
 			else :
 				?>
 				<a class="head-search" href="/search"><i class="la la-search la-lg"></i></a>
-				<a href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/menu/' ) : home_url( '/?menu' ) ) ); ?>"><?php esc_html_e( 'Menu', 'susty' ); ?></a>
+				<a class="menu" href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/menu/' ) : home_url( '/?menu' ) ) ); ?>"><?php esc_html_e( 'Menu', 'susty' ); ?></a>
 				<?php
 			endif;
 		endif;
 		?>
-
-		<!-- BEGIN COPY CODEFUND EMBED -->
-    <div id="codefund"></div>
-    <script
-      src="https://app.codefund.io/properties/817/funder.js"
-      async
-    ></script>
-    <!-- END COPY CODEFUND EMBED -->
 
 	</header>
 
