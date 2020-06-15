@@ -18,7 +18,7 @@ get_header();
 					?>
 					<div id="home-about">
 							<img class="header-logo" alt="Kev Quirk" style="padding-bottom:30px;" src="<?php echo esc_url( get_template_directory_uri() . '/images/kq-avatar.svg' ); ?>">
-						  <p>Hi, I’m Kev Quirk. I’m a cyber security professional and privacy advocate from North West England. My interest include drawing, fishkeeping, motorbikes & open source software.</p>
+						  <p>Hi, I’m Kev Quirk. I’m a cyber security professional and privacy advocate from North West England. I use this blog to write about blogging, technology and web design.</p>
 						  <ul class="social">
 								<li>
 						      <a title="Email" href="mailto:email@me.kevq.uk"><i class="las la-envelope-open-text la-2x"></i></a>
