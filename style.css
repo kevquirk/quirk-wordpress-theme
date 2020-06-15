@@ -312,6 +312,11 @@ ul.social li a:hover, a:active {
     line-height: 1.7;
 }
 
+.mention-list {
+    margin-top: -3em;
+    padding-left: 0;
+}
+
 .mention-list li {
     width: 40px;
     padding: 0;
@@ -322,8 +327,8 @@ ul.social li a:hover, a:active {
     width: 40px;
 }
 
-.mention-list {
-  padding-left: 0;
+.mention-list .toggle-additional-facepiles {
+    margin-top: .6em;
 }
 
 .avatar.avatar-64.photo.avatar-default.local-avatar:hover {
@@ -567,6 +572,7 @@ h2 {
 }
 
 h3 {
+  margin-top: 2em;
 	font-size: 1.5em;
 }
 
