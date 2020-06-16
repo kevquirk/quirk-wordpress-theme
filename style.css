@@ -1626,10 +1626,10 @@ p.has-background {
 	background: #f3f3f3;
 }
 
-/* Format the old posts notice */
+/* Format the old posts notice */ 
 .old-notice {
     padding: 20px 30px;
-    background-color: #01579B;
+    background-color: var(--accent);
     margin-bottom: 1em;
     color: #fff;
     border-radius: 4px;
@@ -1655,8 +1655,11 @@ p.has-background {
 /* fix advert link */
 #cf[data-template][data-theme="light"] a,
 #cf[data-template][data-theme="light"] a:hover {
-  background: #01579B !important;
+  background: var(--accent) !important;
 }
 #cf[data-template][data-theme="dark"], #cf[data-template][data-theme="dark"] *, #cf[data-template][data-theme="light"], #cf[data-template][data-theme="light"] * {
   font-family: "fira", helvetica, arial, sans-serif;
+}
+div#cf[data-template=top-bar] a.cf-wrapper span.cf-smartbar-right .cf-cta {
+  color: var(--accent);
 }
