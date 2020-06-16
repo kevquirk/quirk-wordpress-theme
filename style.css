@@ -1626,7 +1626,7 @@ p.has-background {
 	background: #f3f3f3;
 }
 
-/* Format the old posts notice */ 
+/* Format the old posts notice */
 .old-notice {
     padding: 20px 30px;
     background-color: var(--accent);
@@ -1661,5 +1661,5 @@ p.has-background {
   font-family: "fira", helvetica, arial, sans-serif;
 }
 div#cf[data-template=top-bar] a.cf-wrapper span.cf-smartbar-right .cf-cta {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
