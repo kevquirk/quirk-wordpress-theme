@@ -314,7 +314,6 @@ ul.social li a:hover, a:active {
 }
 
 .mention-list {
-    margin-top: -3em;
     padding-left: 0;
 }
 
@@ -1378,6 +1377,12 @@ article > header > h1, article > header > h2 {
 	font-size: 0.75em;
 }
 
+/* Fix meta font-size on notes page */
+.category-51 .cat-links,
+.category-51 .comments-link {
+  font-size: 1em;
+}
+
 .entry-meta a {
 	color: var(--light);
 	border: none;
@@ -1397,7 +1402,7 @@ article > header > h1, article > header > h2 {
 	margin: 0 .5em 0 0;
 	background: var(--accent);
 	border-radius: 4px;
-	color: #fff;
+	color: var(--bg);
 	font-weight: bold;
 	transition: 0.4s;
 	line-height: 3rem;
@@ -1406,7 +1411,7 @@ article > header > h1, article > header > h2 {
 
 .button:hover, .button:active, .button:focus {
 	background: var(--main);
-	color: #fff;
+	color: var(--bg);
 }
 
 a.button {
@@ -1654,12 +1659,22 @@ p.has-background {
 
 /* fix advert link */
 #cf[data-template][data-theme="light"] a,
-#cf[data-template][data-theme="light"] a:hover {
-  background: var(--accent) !important;
+#cf[data-template][data-theme="light"] a:hover,
+div#cf[data-template="top-bar"] a.cf-wrapper:hover {
+  background: var(--accent);
 }
-#cf[data-template][data-theme="dark"], #cf[data-template][data-theme="dark"] *, #cf[data-template][data-theme="light"], #cf[data-template][data-theme="light"] * {
+#cf[data-template][data-theme="dark"],
+#cf[data-template][data-theme="dark"] *,
+#cf[data-template][data-theme="light"],
+#cf[data-template][data-theme="light"] *,
+div#cf[data-template="top-bar"] div.cf-footer a.cf-powered-by,
+div#cf[data-template="top-bar"] div.cf-footer a.cf-powered-by:hover,
+div#cf[data-template="top-bar"] div.cf-footer span.cf-close,
+div#cf[data-template="top-bar"] div.cf-footer span.cf-close:hover,
+div#cf[data-template="top-bar"] div.cf-footer {
   font-family: "fira", helvetica, arial, sans-serif;
+  color: var(--bg);
 }
 div#cf[data-template=top-bar] a.cf-wrapper span.cf-smartbar-right .cf-cta {
-  color: var(--accent) !important;
+  color: #333;
 }

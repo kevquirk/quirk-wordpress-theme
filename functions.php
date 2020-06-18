@@ -245,3 +245,13 @@ add_filter('comment_form_default_fields','placeholder_author_email_url_form_fiel
 // Change Gutenberg to use a custom style
 add_theme_support('editor-styles');
 add_editor_style( 'style-editor.css' );
+
+// Remove notes category from homepage
+function exclude_category_home( $query ) {
+if ( $query->is_home ) {
+$query->set( 'cat', '-51' );
+}
+return $query;
+}
+
+add_filter( 'pre_get_posts', 'exclude_category_home' );

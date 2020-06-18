@@ -14,8 +14,8 @@ get_header();
 
 			<header>
 				<?php
-				echo( '<h1 class="notes-title"><i class="las la-edit la-lg"></i>Notes</h1>' );
-				echo( '<p>Notes are shorter posts that I write. They could include passing thoughts, or links to sites that I have found interesting. Basically anything that I consider noteworthy that doesn&#8217;t justify an entire post.</p><br>');
+				echo( '<h1 class="notes-title"><i class="las la-edit la-lg"></i>My Notes</h1>' );
+				echo( '<p>I use this page to share my opinions, thoughts and posts on more generalist topics, as well as my other interests.</p><br>');
 				?>
 			</header>
 
@@ -40,7 +40,7 @@ get_header();
 	 			?>
 	 		</div>
 			<div class="entry-meta">
-				<?php susty_wp_posted_on(); ?>
+				<?php susty_wp_posted_on(); susty_wp_entry_footer(); ?>
 			</div><!-- .entry-meta -->
 			<br>
 		<?php
@@ -52,8 +52,10 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div style="text-align:center;" class="pagination">
-		<?php posts_nav_link( '  ', 'Newer Notes', 'Older Notes' ); ?>
+	<!-- Pagination links -->
+	<div class="pagination">
+		<div class="nav-next alignleft"><?php next_posts_link( '<< Older posts' ); ?></div>
+		<div class="nav-previous alignright"><?php previous_posts_link( 'Newer posts >>' ); ?></div>
 	</div>
 
 <?php
