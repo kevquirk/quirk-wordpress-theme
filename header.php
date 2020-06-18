@@ -17,6 +17,10 @@
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/merriweather/merriweather.css' ); ?>" type='text/css' media='all' />
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/fira/fira.css' ); ?>" type='text/css' media='all' />
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/lineawesome/css/line-awesome.min.css' ); ?>" type='text/css' media='all' />
+
+	<!-- Plausible Analytics embed -->
+	<script async defer data-domain="kevq.uk" src="https://plausible.io/js/plausible.js"></script>
+
 	<!-- BEGIN COPY CODEFUND EMBED -->
     <div id="codefund"></div>
     <script
