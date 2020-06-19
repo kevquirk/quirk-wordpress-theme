@@ -1377,9 +1377,8 @@ article > header > h1, article > header > h2 {
 }
 
 .comment-guidelines {
-  color: var(--light);
-  font-size: 0.8em;
   font-weight: bold;
+  margin-bottom: 2em;
 }
 
 /* Fix meta font-size on notes page */
