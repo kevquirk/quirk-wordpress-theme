@@ -122,7 +122,6 @@ h1.notes-title {
 
 hr {
 	box-sizing: content-box; /* 1 */
-	height: 0; /* 1 */
 	overflow: visible; /* 2 */
   background-color: var(--border)
   border: 0;
