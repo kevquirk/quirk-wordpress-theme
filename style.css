@@ -68,6 +68,7 @@ header#masthead > a,
 .comment-content p,
 .comment-reply-link,
 .comment-metadata,
+.comment-guidelines,
 .comment-author.vcard.h-card.u-author,
 label,
 textarea,
@@ -1373,6 +1374,12 @@ article > header > h1, article > header > h2 {
 .comments-link {
 	color: var(--light);
 	font-size: 0.75em;
+}
+
+.comment-guidelines {
+  color: var(--light);
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 /* Fix meta font-size on notes page */
