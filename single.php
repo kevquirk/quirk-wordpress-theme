@@ -47,7 +47,7 @@ get_header();
 		<hr>
 
 		<h2><i class="lar la-comment la-lg"></i> Comments</h2>
-		<p>Please read my <a target="blank" href="/comment-guidelines">comment guidelines</a> before posting a comment.</p>
+		<p class="entry-meta"><b>Please read my <a target="blank" href="/comment-guidelines">comment guidelines</a> before posting a comment.</b></p>
 
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template.
