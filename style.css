@@ -124,6 +124,11 @@ hr {
 	box-sizing: content-box; /* 1 */
 	height: 0; /* 1 */
 	overflow: visible; /* 2 */
+  background-color: var(--border)
+  border: 0;
+	height: 1px;
+  width: 80%;
+  margin: 3em auto;
 }
 
 /**
@@ -674,12 +679,6 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
-}
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
 }
 
 ul {
