@@ -39,7 +39,7 @@ get_header();
 					<section style="display: none;" class="h-card">
 						<!-- About me -->
 								<span class="p-name">Kev Quirk</span>
-								<span class="p-note">I'm a cyber security professional and privacy advocate from North West England. My interest include drawing, fishkeeping, motorbikes & open source software.</span>
+								<span class="p-note">I'm a cyber security professional and privacy advocate from North West England. My interest include drawing, fish keeping, motorbikes & open source software.</span>
 
 						<!-- My Indieweb profile pic -->
 								<img class="u-photo" src="https://kevq.b-cdn.net/wp-content/uploads/2019/11/400px-round-grey-glasses.png"/>
