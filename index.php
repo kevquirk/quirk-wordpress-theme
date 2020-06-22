@@ -21,7 +21,7 @@ get_header();
 						  <p>Hi, I’m Kev Quirk. I’m a cyber security professional and privacy advocate from North West England. I use this blog to write about blogging, technology and web design.</p>
 						  <ul class="social">
 								<li>
-						      <a title="Email" href="mailto:email@me.kevq.uk"><i class="las la-envelope-open-text la-2x"></i></a>
+						      <a title="Email" href="mailto:kev@craves.coffee"><i class="las la-envelope-open-text la-2x"></i></a>
 						    </li>
 						    <li>
 						      <a title="Mastodon" href="https://fosstodon.org/@kev"><i class="lab la-mastodon la-2x"></i></a>
@@ -49,7 +49,7 @@ get_header();
 
 						<!-- Links -->
 								<a class="u-url u-uid" href="https://kevq.uk"></a>
-								<a class="u-email" rel="me" href="mailto:email@me.kevq.uk"></a>
+								<a class="u-email" rel="me" href="mailto:kev@craves.coffee"></a>
 								<a class="u-url" rel="me" href="https://fosstodon.org/@kev"></a>
 								<a class="u-url" rel="me" href="https://twitter.com/kevquirk"></a>
 								<a class="u-url" rel="me" href="https://keybase.io/kevq"></a>
