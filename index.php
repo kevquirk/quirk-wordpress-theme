@@ -57,6 +57,7 @@ get_header();
 						<!-- Categories -->
 								<span class="p-category">Drawing</span>
 								<span class="p-category">Fishkeeping</span>
+								<span class="p-category">InfoSec</span>
 								<span class="p-category">Motorbikes</span>
 								<span class="p-category">Open Source Software</span>
 								<span class="p-category">Privacy</span>
