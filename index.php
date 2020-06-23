@@ -42,7 +42,7 @@ get_header();
 								<span class="p-note">I'm a cyber security professional and privacy advocate from North West England. My interest include drawing, fish keeping, motorbikes & open source software.</span>
 
 						<!-- My Indieweb profile pic -->
-								<img class="u-photo" src="https://kevq.b-cdn.net/wp-content/uploads/2019/11/400px-round-grey-glasses.png"/>
+								<img class="u-photo" src="https://cdn.kevq.uk/wp-content/uploads/2019/11/400px-round-grey-glasses.png"/>
 
 						<!-- My location -->
 								<span class="p-locality">North West England</span>
