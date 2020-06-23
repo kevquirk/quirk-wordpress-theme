@@ -55,12 +55,13 @@ get_header();
 								<a class="u-url" rel="me" href="https://keybase.io/kevq"></a>
 
 						<!-- Categories -->
-								<span class="p-category">Drawing</span>
-								<span class="p-category">Fishkeeping</span>
+								<span class="p-category">Blogging</span>
+								<span class="p-category">Fish keeping</span>
 								<span class="p-category">InfoSec</span>
 								<span class="p-category">Motorbikes</span>
 								<span class="p-category">Open Source Software</span>
 								<span class="p-category">Privacy</span>
+								<span class="p-category">Web Design</span>
 					</section>
 					<?php
 				endif;
