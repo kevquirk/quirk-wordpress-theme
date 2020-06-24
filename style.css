@@ -1324,9 +1324,9 @@ svg * {
 ## Content
 --------------------------------------------------------------*/
 #content {
-	max-width: 640px;
+	max-width: 40rem;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 0.5em;
 }
 
 #primary-menu, .sub-menu {
