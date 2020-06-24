@@ -66,6 +66,7 @@ header#masthead > a,
 .comment-form-comment,
 .comment-notes,
 .comment-content p,
+.comment-content li,
 .comment-reply-link,
 .comment-metadata,
 .comment-guidelines,
@@ -1018,7 +1019,8 @@ ol.comment-list {
 	position: relative;
 }
 
-.comment-content p {
+.comment-content p,
+.comment-content li {
 	font-size: 0.75em;
 }
 
