@@ -691,6 +691,7 @@ ol {
 
 .children {
     list-style: none;
+    margin-bottom: 2.5em;
 }
 
 li > ul,
