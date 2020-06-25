@@ -36,7 +36,15 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			?>
+
+			<!-- Pagination links -->
+			<div class="pagination">
+				<div class="nav-next alignleft"><?php next_posts_link( '<< Older posts' ); ?></div>
+				<div class="nav-previous alignright"><?php previous_posts_link( 'Newer posts >>' ); ?></div>
+			</div>
+
+		<?php
 
 		else :
 
