@@ -95,6 +95,7 @@ kbd,
 tt,
 var {
 	font-family: Consolas, monaco, "Ubuntu Mono", "Liberation Mono", "Courier New", Courier, monospace;
+  font-size: .9em;
 }
 
 body {
@@ -145,7 +146,6 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
-	white-space: pre-wrap;
 	max-height: 650px;
 }
 
