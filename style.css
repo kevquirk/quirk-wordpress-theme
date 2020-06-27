@@ -1239,7 +1239,7 @@ header#masthead {
 	max-width: 55em;
 	margin: 0 auto;
 	margin-bottom: 3em;
-	padding: 0 1em 1.5em 1em;
+	padding: 0 .5em 1.5em .5em;
 	border-bottom: 1px solid var(--border);
 }
 
