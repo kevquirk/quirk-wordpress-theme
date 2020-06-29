@@ -241,8 +241,16 @@ add_filter( 'comment_form_defaults', 'placeholder_comment_form_field' );
 }
 add_filter('comment_form_default_fields','placeholder_author_email_url_form_fields');
 
+// Stop Google Fonts loading in Editor.
+function deregister_google_font() {
+    // deregister google font.
+    wp_deregister_style( 'wp-editor-font' );
+    // reregister blank file so dependency exists.
+    wp_register_style( 'wp-editor-font', get_stylesheet_directory() . '/an-empty.css' );
+}
+add_action( 'admin_enqueue_scripts', 'deregister_google_font', 11 );
 
-// Change Gutenberg to use a custom style
+// Gutenberg custom stylesheet
 add_theme_support('editor-styles');
 add_editor_style( 'style-editor.css' );
 
