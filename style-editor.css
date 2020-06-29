@@ -44,7 +44,8 @@ table {
 .editor-block-list__layout .editor-block-list__block p,
 .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
 figcaption,
-ul {
+ul,
+ol {
   font-family: Georgia, serif;
   color: var(--main);
   font-size: 18px;
