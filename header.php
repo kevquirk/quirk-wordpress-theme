@@ -21,13 +21,6 @@
 	<!-- Plausible Analytics embed -->
 	<script async defer data-domain="kevq.uk" src="https://plausible.io/js/plausible.js"></script>
 
-	<!-- BEGIN COPY CODEFUND EMBED -->
-    <div id="codefund"></div>
-    <script
-      src="https://app.codefund.io/properties/817/funder.js"
-      async
-    ></script>
-    <!-- END COPY CODEFUND EMBED -->
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

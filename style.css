@@ -1662,25 +1662,3 @@ p.has-background {
 		border-color: #fff;
     border-bottom: 2px dotted #fff;
 }
-
-/* fix advert link */
-#cf[data-template][data-theme="light"] a,
-#cf[data-template][data-theme="light"] a:hover,
-div#cf[data-template="top-bar"] a.cf-wrapper:hover {
-  background: var(--accent);
-}
-#cf[data-template][data-theme="dark"],
-#cf[data-template][data-theme="dark"] *,
-#cf[data-template][data-theme="light"],
-#cf[data-template][data-theme="light"] *,
-div#cf[data-template="top-bar"] div.cf-footer a.cf-powered-by,
-div#cf[data-template="top-bar"] div.cf-footer a.cf-powered-by:hover,
-div#cf[data-template="top-bar"] div.cf-footer span.cf-close,
-div#cf[data-template="top-bar"] div.cf-footer span.cf-close:hover,
-div#cf[data-template="top-bar"] div.cf-footer {
-  font-family: "fira", helvetica, arial, sans-serif;
-  color: var(--bg);
-}
-div#cf[data-template=top-bar] a.cf-wrapper span.cf-smartbar-right .cf-cta {
-  color: #333;
-}
