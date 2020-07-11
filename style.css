@@ -685,7 +685,8 @@ ol {
 	list-style: decimal;
 }
 
-.children {
+.children,
+.children li {
     list-style: none;
     margin-bottom: 3em;
 }
