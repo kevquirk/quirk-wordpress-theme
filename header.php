@@ -22,6 +22,10 @@
 <script async defer data-domain="kevq.uk" src="https://plausible.io/js/plausible.js"></script>
 <!-- END PLAUSIBLE ANALYTICS -->
 
+<!-- START ETHICAL ADS -->
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+<!-- END ETHICAL ADS -->
+
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -29,6 +33,9 @@
 
 <div id="page">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'susty' ); ?></a>
+
+	<!-- Ethical advert -->
+	<div data-ea-publisher="kevq" data-ad-type="text"></div>
 
 	<header id="masthead">
 		<?php
