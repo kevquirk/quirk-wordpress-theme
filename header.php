@@ -19,12 +19,8 @@
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/lineawesome/css/line-awesome.min.css' ); ?>" type='text/css' media='all' />
 
 <!-- START PLAUSIBLE ANALYTICS -->
-<script async defer data-domain="kevq.uk" src="https://plausible.io/js/plausible.js"></script>
+<script async defer data-domain="kevq.uk" src="https://stats.kevq.uk/js/index.js"></script>
 <!-- END PLAUSIBLE ANALYTICS -->
-
-<!-- START ETHICAL ADS -->
-<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
-<!-- END ETHICAL ADS -->
 
 	<?php wp_head(); ?>
 </head>
