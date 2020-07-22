@@ -1688,7 +1688,8 @@ p.has-background {
 }
 
 .ea-content a:hover {
-  border: 2px dashed var(--hover);
+  border-bottom: 2px solid var(--hover);
+  border-radius: 0;
 }
 
 
