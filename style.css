@@ -78,7 +78,10 @@ input,
 #email,
 #url,
 p.has-background,
-.comment-awaiting-moderation {
+.comment-awaiting-moderation,
+.ea-text,
+.ea-text a,
+.ea-callout {
 	font-family: "fira", helvetica, arial, sans-serif;
 	font-variant-ligatures: no-common-ligatures;
 }
@@ -1658,4 +1661,38 @@ p.has-background {
 		color: #fff;
 		border-color: #fff;
     border-bottom: 2px dotted #fff;
+}
+
+/* Format ethical ads */
+.ea-text,
+.ea-text a,
+.ea-callout a,
+[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
+    color: var(--main) !important;
+}
+
+.ea-content {
+    line-height: 1.7;
+    font-size: 1.1em;
+    background: var(--code) !important;
+}
+
+.ea-content a {
+  background: none !important;
+  transition: .4s;
+}
+
+.ea-content a:hover {
+  background: var(--hover) !important;
+}
+
+.ea-callout a {
+    font-style: normal !important;
+    color: var(--main) !important;
+    background: none !important;
+    transition: .4s;
+}
+
+.ea-callout a:hover {
+    background: var(--hover) !important;
 }
