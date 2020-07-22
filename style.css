@@ -16,6 +16,7 @@ Tags:
     --accent: #01579B;
     --main: #333333;
     --hover: #B3E5FC;
+    --adhover: #003f6c;
     --light: #555;
     --lighter: #f3f3f3;
 		--border: #e6e6e6;
@@ -29,6 +30,7 @@ Tags:
 			--accent: #B3E5FC;
 			--main: #f3f3f3;
       --hover: #666666;
+      --adhover: #d8f1fd;
 			--light: #ececec;
 			--lighter: #666;
 			--border: #e6e6e6;
@@ -1667,25 +1669,31 @@ p.has-background {
 .ea-text,
 .ea-text a,
 .ea-callout a,
-[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
-    color: var(--main) !important;
+[data-ea-publisher].loaded .ea-content a strong,
+[data-ea-publisher].loaded .ea-content a b,
+[data-ea-type].loaded .ea-content a strong,
+[data-ea-type].loaded .ea-content a b {
+    color: var(--bg) !important;
 }
 
 .ea-content {
     line-height: 1.7;
     font-size: 1.1em;
-    background: var(--code) !important;
+    text-align: center !important;
+    background: var(--accent) !important;
 }
 
 .ea-content a {
   background: none !important;
-  transition: .4s;
+  padding: 3px 5px 3px 5px;
 }
 
 .ea-content a:hover {
-  background: var(--hover) !important;
+  border: 2px dashed var(--hover);
 }
 
+
+/* "Ad by EthicalAds" notice */
 .ea-callout a {
     font-style: normal !important;
     color: var(--main) !important;
