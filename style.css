@@ -1699,6 +1699,7 @@ p.has-background {
     color: var(--main) !important;
     background: none !important;
     transition: .4s;
+    display: none;
 }
 
 .ea-callout a:hover {
