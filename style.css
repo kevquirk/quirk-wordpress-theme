@@ -1240,6 +1240,7 @@ header#masthead {
 	max-width: 55em;
 	margin: 0 auto;
 	margin-bottom: 3em;
+  margin-top: -1em; /*to account for ethicalads banner */
 	padding: 0 .5em 1.5em .5em;
 	border-bottom: 1px solid var(--border);
 }
@@ -1668,18 +1669,22 @@ p.has-background {
 .ea-text,
 .ea-text a,
 .ea-callout a,
-[data-ea-publisher].loaded .ea-content a strong,
 [data-ea-publisher].loaded .ea-content a b,
-[data-ea-type].loaded .ea-content a strong,
 [data-ea-type].loaded .ea-content a b {
-    color: var(--bg) !important;
+    color: var(--main) !important;
 }
+
+[data-ea-type].loaded .ea-content a strong,
+[data-ea-publisher].loaded .ea-content a strong {
+  color: var(--accent) !important;
+}
+
 
 .ea-content {
     line-height: 1.7;
     font-size: 1.1em;
     text-align: center !important;
-    background: var(--accent) !important;
+    background: var(--code) !important;
 }
 
 .ea-content a {
@@ -1688,7 +1693,7 @@ p.has-background {
 }
 
 .ea-content a:hover {
-  border-bottom: 2px solid var(--hover);
+  border-bottom: 2px solid var(--accent);
   border-radius: 0;
 }
 
@@ -1699,7 +1704,6 @@ p.has-background {
     color: var(--main) !important;
     background: none !important;
     transition: .4s;
-    display: none;
 }
 
 .ea-callout a:hover {
