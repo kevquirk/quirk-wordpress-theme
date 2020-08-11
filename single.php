@@ -29,7 +29,7 @@ get_header();
 		<!-- Add newsletter to the bottom of all posts. -->
 		<div class="post-newsletter">
 			<h2>Subscribe for more!</h2>
-			<p>You will receive monthly emails with updates and previews of upcoming posts. Like everything on this site, <a href="/privacy/#4">my newsletter respects your privacy</a>.</p>
+			<p>You will receive monthly emails with updates and previews of upcoming posts. To find out more, <a href="/newsletter">click here</a>.</p>
 			<?php echo do_shortcode( '[swp-forms id=2222]' ); ?>
 		</div>
 
