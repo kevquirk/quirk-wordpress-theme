@@ -149,6 +149,7 @@ img {
 	font-size: 0.9rem;
 	text-align: center;
   font-family: "fira", arial, sans-sans-serif;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 /* Formats the feature image correctly */
@@ -337,6 +338,7 @@ a.button {
   display: block !important;
   margin: 0 auto !important;
   font-family: "fira", arial, sans-serif;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 p.has-background {
