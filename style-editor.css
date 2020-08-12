@@ -277,6 +277,7 @@ a.button {
 .has-background {
   display: block !important;
   margin: 0 auto !important;
+  font-family: arial, sans-serif;
 }
 
 p.has-background {
