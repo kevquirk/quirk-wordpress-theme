@@ -80,7 +80,7 @@ table {
 figcaption,
 ul,
 ol {
-  font-family: "merriweather", Georgia, serif;
+  font-family: "merriweather", Georgia, serif !important;
   color: var(--main);
   font-size: 18px;
 }
