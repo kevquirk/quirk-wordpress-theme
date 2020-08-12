@@ -23,6 +23,40 @@ Tags:
  		--code: #f3f3f3;
  }
 
+ /* Custom fonts */
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black.woff') format('woff');
+     font-weight: 900;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black-italic.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black-italic.woff') format('woff');
+     font-weight: 900;
+     font-style: italic;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light-italic.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light-italic.woff') format('woff');
+     font-weight: 300;
+     font-style: italic;
+     font-display: swap;
+ }
+
 /* Main typography elements */
 
 /* Set fonts */
@@ -46,7 +80,7 @@ table {
 figcaption,
 ul,
 ol {
-  font-family: "Merriweather", Georgia, serif;
+  font-family: "merriweather", Georgia, serif;
   color: var(--main);
   font-size: 18px;
 }
