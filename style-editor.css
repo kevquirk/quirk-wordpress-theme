@@ -93,9 +93,7 @@ h4.rich-text.block-editor-rich-text__editable,
 h5.rich-text.block-editor-rich-text__editable,
 h6.rich-text.block-editor-rich-text__editable,
 #post-title-0,
-table,
-.wp-block-image figcaption,
-figcaption {
+table {
 	color: var(--main);
   font-family: "fira", arial, sans-serif;
   font-weight: bold;
@@ -149,6 +147,7 @@ img {
 	color: var(--light);
 	font-size: 0.9rem;
 	text-align: center;
+  font-family: "fira", arial, sans-sans-serif;
 }
 
 /* Formats the feature image correctly */
