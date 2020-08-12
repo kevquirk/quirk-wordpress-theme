@@ -56,6 +56,30 @@ Tags:
      font-style: italic;
      font-display: swap;
  }
+ @font-face {
+     font-family: 'fira';
+     src: url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-bold.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-bold.woff') format('woff');
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'fira';
+     src: url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-regular.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'firacode';
+     src: url('/wp-content/themes/quirk/fonts/fira/firacode-regular-webfont.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/fira/firacode-regular-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
 
 /* Main typography elements */
 
@@ -71,7 +95,7 @@ h6.rich-text.block-editor-rich-text__editable,
 #post-title-0,
 table {
 	color: var(--main);
-  font-family: arial, sans-serif;
+  font-family: "fira", arial, sans-serif;
   font-weight: bold;
 }
 
@@ -312,7 +336,7 @@ a.button {
 .has-background {
   display: block !important;
   margin: 0 auto !important;
-  font-family: arial, sans-serif;
+  font-family: "fira", arial, sans-serif;
 }
 
 p.has-background {
