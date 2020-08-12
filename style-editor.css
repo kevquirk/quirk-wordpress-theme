@@ -93,7 +93,9 @@ h4.rich-text.block-editor-rich-text__editable,
 h5.rich-text.block-editor-rich-text__editable,
 h6.rich-text.block-editor-rich-text__editable,
 #post-title-0,
-table {
+table,
+.wp-block-image figcaption,
+figcaption {
 	color: var(--main);
   font-family: "fira", arial, sans-serif;
   font-weight: bold;
@@ -102,7 +104,6 @@ table {
 .editor-block-list__layout .editor-block-list__block p,
 .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
 .block-editor-block-list__layout.is-root-container,
-figcaption,
 ul,
 ol {
   font-family: "merriweather", Georgia, serif !important;
@@ -147,7 +148,6 @@ img {
 	margin-top: 0;
 	color: var(--light);
 	font-size: 0.9rem;
-	font-style: italic;
 	text-align: center;
 }
 
