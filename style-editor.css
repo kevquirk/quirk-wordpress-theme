@@ -46,7 +46,7 @@ table {
 figcaption,
 ul,
 ol {
-  font-family: merriweather, Georgia, serif;
+  font-family: "Merriweather", Georgia, serif;
   color: var(--main);
   font-size: 18px;
 }
