@@ -841,7 +841,7 @@ p.feature-credit a:visited,
      );
     background-position: 0 100%;
     background-repeat: repeat-x;
-    background-size: 4px 4px;
+    background-size: 3px 3px;
   transition: background-size .4s;
   color: var(--accent);
   padding: 3px;
