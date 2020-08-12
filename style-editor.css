@@ -194,7 +194,7 @@ em {
 	color: var(--light);
 	font-style: italic;
   font-size: 16px;
-  font-family: "merriweather", Georgia, serif;
+  font-family: "merriweather", Georgia, serif !important;
 }
 
 code, kbd, tt, var {
