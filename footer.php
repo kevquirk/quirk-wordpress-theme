@@ -15,7 +15,8 @@
 			<a href="https://weirdwidewebring.net/prev.html">Previous site</a>  |
 			<a href="https://weirdwidewebring.net/next.html">Next site</a>  |
 			<a href="https://weirdwidewebring.net/random.html">Random site</a>  |
-			<a href="https://weirdwidewebring.net">All sites</a></p>
+			<a href="https://weirdwidewebring.net">All sites</a>  |
+			<a href="https://weirdwidewebring.net/join.html">Join</a></p>
 
 			<p>All work licensed under <i class="la la-creative-commons la-lg"></i><i class="lab la-creative-commons-by la-lg"></i><i class="lab la-creative-commons-sa la-lg"></i> unless otherwise stated.
 		<br><a href="/disclaimer">Disclaimer</a> | <a href="/license-information">License Info</a> | <a href="/privacy">Privacy</a> | <a href="/buy-me-a-coffee">Coffee?</a></p>
