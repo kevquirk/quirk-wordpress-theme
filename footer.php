@@ -11,7 +11,7 @@
 	</div>
 
 	<footer id="colophon">
-			<p class="webring">This site is part of <a href="https://weirdwidewebring.net">The Weird Wide Webring</a><br>
+			<p><i class="las la-ring la-lg"></i> The Weird Wide Webring <i class="las la-ring la-lg"></i><br>
 			<a href="https://weirdwidewebring.net/prev.html">Previous site</a>  |
 			<a href="https://weirdwidewebring.net/next.html">Next site</a>  |
 			<a href="https://weirdwidewebring.net/random.html">Random site</a>  |
