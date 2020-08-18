@@ -97,6 +97,7 @@ table {
 	color: var(--main);
   font-family: "fira", arial, sans-serif;
   font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 .editor-block-list__layout .editor-block-list__block p,
