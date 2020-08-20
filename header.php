@@ -16,7 +16,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/merriweather/merriweather.css' ); ?>" type='text/css' media='all' />
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/fira/fira.css' ); ?>" type='text/css' media='all' />
-	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/lineawesome/css/line-awesome.min.css' ); ?>" type='text/css' media='all' />
+	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/forkawesome/css/fork-awesome.min.css' ); ?>" type='text/css' media='all' />
 
 <!-- START PLAUSIBLE ANALYTICS -->
 <script async defer data-domain="kevq.uk" src="https://stats.kevq.uk/js/index.js"></script>

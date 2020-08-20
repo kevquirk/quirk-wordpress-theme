@@ -21,16 +21,16 @@ get_header();
 						  <p>Hi, I’m Kev Quirk. I’m a cyber security professional and privacy advocate from North West England. I use this blog to write about blogging, technology and web design.</p>
 						  <ul class="social">
 								<li>
-						      <a title="Email" href="mailto:kev@craves.coffee"><i class="las la-envelope-open-text la-2x"></i></a>
+						      <a title="Email" href="mailto:kev@craves.coffee"><i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i></a>
 						    </li>
 						    <li>
-						      <a title="Mastodon" href="https://fosstodon.org/@kev"><i class="lab la-mastodon la-2x"></i></a>
+						      <a title="Mastodon" href="https://fosstodon.org/@kev"><i class="fa fa-mastodon fa-2x" aria-hidden="true"></i></a>
 						    </li>
 						    <li>
-						      <a title="Twitter" href="https://twitter.com/kevquirk"><i class="lab la-twitter la-2x"></i></a>
+						      <a title="Twitter" href="https://twitter.com/kevquirk"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
 						    </li>
 						    <li>
-						      <a title="Keybase" href="https://keybase.io/kevq"><i class="lab la-keybase la-2x"></i></a>
+						      <a title="Keybase" href="https://keybase.io/kevq"><i class="fa fa-keybase fa-2x" aria-hidden="true"></i></a>
 						    </li>
 						  </ul>
 					</div>
