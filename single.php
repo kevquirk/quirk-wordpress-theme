@@ -46,7 +46,7 @@ get_header();
 		<div style="clear: both;"></div>
 		<hr>
 
-		<h2><i class="lar la-comment la-lg"></i> Comments</h2>
+		<h2><i class="fa fa-comments"></i> Comments</h2>
 		<p class="comment-guidelines">Please read my <a target="blank" href="/commenting-guidelines">commenting guidelines</a> before posting a comment.</p>
 
 		<?php
