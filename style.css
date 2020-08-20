@@ -267,12 +267,11 @@ body.archive .attachment-post-thumbnail {
 
 a.blogroll {
 	border: none;
-	transition: 0.2s;
+	transition: 0.4s;
 }
 
 a.blogroll:hover, a.blogroll:active {
 	opacity: 0.7;
-	transition: 0.2s;
 	border: none;
 }
 
@@ -290,12 +289,12 @@ ul.social li {
 ul.social li a, a:visited {
 	background: none;
 	color: var(--main);
+  transition: 0.4s;
 
 }
 
 ul.social li a:hover, a:active {
 	opacity: 0.7;
-	transition: 0.2s;
 }
 
 .response {
@@ -338,7 +337,7 @@ ul.social li a:hover, a:active {
 
 .avatar.avatar-64.photo.avatar-default.local-avatar:hover {
     opacity: 0.7;
-    transition: .2s;
+    transition: .4s;
 }
 
 
@@ -591,19 +590,6 @@ h5 {
 
 h6 {
 	font-size: 1em;
-}
-
-.la:hover,
-.la:active,
-.la:visited,
-.lab:hover,
-.lab:active,
-.lab:visited,
-.las:hover,
-.las:active,
-.las:visited {
-    color: var(--main);
-		transition: 0.5s;
 }
 
 dfn, cite, i {
@@ -1340,7 +1326,7 @@ svg * {
 	font-size: 0.95em;
 	color: var(--main);
 	background: none;
-	transition: 0.2s;
+	transition: 0.4s;
 	line-height: 1.4;
 	padding: 0;
 }
@@ -1354,7 +1340,7 @@ svg * {
 	color: var(--main);
 	opacity: 0.7;
 	border: none;
-	transition: 0.2s;
+	transition: 0.4s;
 }
 
 .entry-title a {
@@ -1363,7 +1349,7 @@ svg * {
 	margin: 0 0 .1em 0;
 	border: none;
 	line-height: 1.2em;
-	transition: 0.2s;
+	transition: 0.4s;
 }
 
 article > header > h1, article > header > h2 {
@@ -1430,7 +1416,7 @@ a.button {
 	padding: 0;
 	background: none;
 	color: var(--light);
-	transition: 0.5s;
+	transition: 0.4s;
 }
 
 .edit-link a {
