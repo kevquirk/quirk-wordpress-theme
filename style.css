@@ -1240,7 +1240,6 @@ header#masthead {
 	max-width: 55em;
 	margin: 0 auto;
 	margin-bottom: 3em;
-  margin-top: -1em; /*to account for ethicalads banner */
 	padding: 0 .5em 1.5em .5em;
 	border-bottom: 1px solid var(--border);
 }
