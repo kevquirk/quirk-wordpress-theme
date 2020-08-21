@@ -82,7 +82,8 @@ p.has-background,
 .comment-awaiting-moderation,
 .ea-text,
 .ea-text a,
-.ea-callout {
+.ea-callout,
+.has-medium-font-size {
 	font-family: "fira", helvetica, arial, sans-serif;
 	font-variant-ligatures: no-common-ligatures;
 }
@@ -590,6 +591,11 @@ h5 {
 
 h6 {
 	font-size: 1em;
+}
+
+.has-medium-font-size {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 dfn, cite, i {
