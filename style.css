@@ -728,13 +728,13 @@ td {
 
 /* Format table stripes */
 .wp-block-table.is-style-stripes tr:nth-child(odd) {
-  background: var(--code);
-  color: var(--main);
+  background: var(--code) !important;
+  color: var(--main) !important;
 }
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
-  background: var(--bg);
-  color: var(--main);
+  background: var(--bg) !important;
+  color: var(--main) !important;
 }
 
 
