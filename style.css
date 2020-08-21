@@ -714,10 +714,6 @@ table {
 	width: 100%;
 }
 
-.wp-block-table table {
-    border: 1px solid;
-}
-
 .wp-block-table.is-style-stripes {
     border-bottom: none;
 }
