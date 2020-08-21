@@ -144,7 +144,9 @@ img {
     border-radius: 8px;
 }
 
-.wp-block-image figcaption, figcaption {
+.wp-block-image figcaption,
+figcaption,
+.has-medium-font-size {
 	margin-top: 0;
 	color: var(--light);
 	font-size: 0.9rem;
@@ -182,6 +184,11 @@ h5.rich-text.block-editor-rich-text__editable {
 
 h6.rich-text.block-editor-rich-text__editable {
 	font-size: 18px;
+}
+
+.has-medium-font-size {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .la:hover,
