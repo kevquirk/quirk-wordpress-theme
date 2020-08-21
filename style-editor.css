@@ -92,6 +92,7 @@ h3.rich-text.block-editor-rich-text__editable,
 h4.rich-text.block-editor-rich-text__editable,
 h5.rich-text.block-editor-rich-text__editable,
 h6.rich-text.block-editor-rich-text__editable,
+.has-medium-font-size,
 #post-title-0,
 table {
 	color: var(--main);
@@ -145,8 +146,7 @@ img {
 }
 
 .wp-block-image figcaption,
-figcaption,
-.has-medium-font-size {
+figcaption {
 	margin-top: 0;
 	color: var(--light);
 	font-size: 0.9rem;
