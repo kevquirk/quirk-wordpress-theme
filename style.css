@@ -726,6 +726,17 @@ td {
 	border: 1px dotted;
 }
 
+/* Format table stripes */
+.wp-block-table.is-style-stripes tr:nth-child(odd) {
+  background: var(--code);
+  color: var(--main);
+}
+
+.wp-block-table.is-style-stripes tr:nth-child(even) {
+  background: var(--bg);
+  color: var(--main);
+}
+
 
 
 /*--------------------------------------------------------------
