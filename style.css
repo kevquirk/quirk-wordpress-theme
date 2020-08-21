@@ -628,8 +628,6 @@ address {
 	margin: 0 0 1.5em;
 }
 
-
-
 code, kbd, tt, var {
 	color: var(--main);
 	background: var(--code);
@@ -730,9 +728,9 @@ td {
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
   background: var(--bg) !important;
-  co
+}
 
-  .wp-block-table table {
+.wp-block-table table {
     border: 1px solid var(--main) !important;
 }
 
