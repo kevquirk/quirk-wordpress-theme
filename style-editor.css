@@ -97,8 +97,19 @@ h6.rich-text.block-editor-rich-text__editable,
 table {
 	color: var(--main);
   font-family: "fira", arial, sans-serif;
-  font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
+}
+
+.editor-block-list__layout .editor-block-list__block,
+.editor-post-title__block .editor-post-title__input,
+h1.rich-text.block-editor-rich-text__editable,
+h2.rich-text.block-editor-rich-text__editable,
+h3.rich-text.block-editor-rich-text__editable,
+h4.rich-text.block-editor-rich-text__editable,
+h5.rich-text.block-editor-rich-text__editable,
+h6.rich-text.block-editor-rich-text__editable,
+#post-title-0 {
+  font-weight: bold;
 }
 
 .editor-block-list__layout .editor-block-list__block p,
