@@ -734,9 +734,11 @@ td {
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
   background: var(--bg) !important;
-  color: var(--main) !important;
-}
+  co
 
+  .wp-block-table table {
+    border: 1px solid var(--main) !important;
+}
 
 
 /*--------------------------------------------------------------
