@@ -58,7 +58,7 @@
 				<?php
 			else :
 				?>
-				<a class="head-search" href="/search"><i class="la la-search la-lg"></i></a>
+				<a class="head-search" href="/search"><i class="fa fa-search la-lg"></i></a>
 				<a class="menu" href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/menu/' ) : home_url( '/?menu' ) ) ); ?>"><?php esc_html_e( 'Menu', 'susty' ); ?></a>
 				<?php
 			endif;
