@@ -298,6 +298,16 @@ ul.social li a:hover, a:active {
 	opacity: 0.7;
 }
 
+/* Formats the list on the identities page */
+ul.identity-list {
+    list-style: none;
+    padding-left: 1em;
+}
+
+ul.identity-list i.fa {
+  padding-right: 10px;
+}
+
 .response {
 	margin: 1.5em 0 0 0;
   padding: 5px;
