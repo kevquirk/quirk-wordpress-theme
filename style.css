@@ -72,6 +72,7 @@ header#masthead > a,
 .comment-metadata,
 .comment-guidelines,
 .comment-author.vcard.h-card.u-author,
+.comment-body,
 label,
 textarea,
 input,
@@ -1011,7 +1012,9 @@ a.to-top {
   padding: 0;
 }
 
-
+.comment-body {
+  margin-bottom: 60px;
+}
 
 ol.comment-list {
     list-style: none;
