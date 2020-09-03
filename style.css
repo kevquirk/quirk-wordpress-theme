@@ -270,6 +270,8 @@ body.archive .attachment-post-thumbnail {
 a.blogroll {
 	border: none;
 	transition: 0.4s;
+  color: var(--accent);
+  background: none;
 }
 
 a.blogroll:hover, a.blogroll:active {
