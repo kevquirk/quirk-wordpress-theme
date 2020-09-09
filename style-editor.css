@@ -139,18 +139,7 @@ strong {
 	font-weight: bolder;
 }
 
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-	font-size: 80%;
-}
-
-img {
-	border-style: none;
-}
-
+/** Images **/
 .wp-block-image img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
@@ -221,11 +210,6 @@ p.feature-credit {
 	font-size: 14px;
 }
 
-dfn, cite, i {
-	font-style: italic;
-	font-size: 0.8em;
-}
-
 em {
 	font-style: italic;
 }
@@ -240,6 +224,11 @@ em {
 	font-style: italic;
   font-size: 16px;
   font-family: "merriweather", Georgia, serif !important;
+}
+
+dfn, cite, i {
+	font-style: italic;
+	font-size: 0.8em;
 }
 
 code, kbd, tt, var {
@@ -291,7 +280,7 @@ td {
 }
 
 /*--------------------------------------------------------------
-# Links
+# Links & buttons
 --------------------------------------------------------------*/
 
 a,
@@ -338,10 +327,6 @@ a:hover, a:active {
 	outline: 0;
 }
 
-a.to-top {
-	background: none;
-}
-
 .button, .button:visited {
 	padding: .8em .8em;
 	margin: 0 .5em 0 0;
@@ -382,23 +367,23 @@ p.has-background {
 
 /** Blue colours **/
 .has-blue-background-color {
-	background-color: #01579B !important;
+	background-color: var(--accent) !important;
 }
 .has-blue-color {
-	color: #01579B;
+	color: var(--accent);
 }
 .has-blue-color a {
-	color: #01579B;
-	border-bottom: 2px solid #01579B !important;
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent) !important;
   background: none;
   border-radius: 0;
 }
 .has-blue-color a:hover {
-	color: #01579B;
-	border-bottom: 2px dotted #01579B !important;
+	color: var(--accent);
+	border-bottom: 2px dotted var(--accent) !important;
 }
 .has-blue-color code {
-	color: #01579B;
+	color: var(--accent);
 	background: #ffffff;
 }
 
