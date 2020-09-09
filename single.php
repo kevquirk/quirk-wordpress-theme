@@ -17,7 +17,7 @@ get_header();
 			$old_post = 60*60*24*365; // A Year
 			if((date('U')-get_the_time('U')) > $old_post) {
 	  	echo '<div class="old-notice"><i class="fa fa-exclamation-triangle la-lg" aria-hidden="true"></i> <b>OLD POST NOTICE</b><br>
-			This post was last updated over a year ago, therefore the contents of this post may be out of date. Please see my <a href="/disclaimer">disclaimer</a> for more information.</div>';
+			This post was last updated over a year ago, therefore this content may be out of date. Please see my <a href="/disclaimer">disclaimer</a> for more information.</div>';
 			}
 		?>
 		<?php
