@@ -1665,16 +1665,16 @@ p.has-background {
 }
 
 .old-notice a, .old-notice a:visited {
-		color: #fff;
-		border-color: #fff;
+		color: var(--bg);
+		border-color: var(--bg);
     background: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--bg);
     border-radius: 0;
     padding: 0;
 }
 
 .old-notice a:hover, .old-notice a:active {
-		color: #fff;
-		border-color: #fff;
-    border-bottom: 2px dotted #fff;
+		color: var(--bg);
+		border-color: var(--bg);
+    border-bottom: 2px dotted var(--bg);
 }
