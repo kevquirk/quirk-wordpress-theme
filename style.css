@@ -1520,23 +1520,23 @@ p.has-background {
 
 /** Blue colours **/
 .has-blue-background-color {
-	background-color: #01579B !important;
+	background-color: var(--accent) !important;
 }
 .has-blue-color {
-	color: #01579B;
+	color: var(--accent);
 }
 .has-blue-color a {
-	color: #01579B;
-	border-bottom: 2px solid #01579B !important;
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent) !important;
   background: none;
   border-radius: 0;
 }
 .has-blue-color a:hover {
-	color: #01579B;
-	border-bottom: 2px dotted #01579B !important;
+	color: var(--accent);
+	border-bottom: 2px dotted var(--accent) !important;
 }
 .has-blue-color code {
-	color: #01579B;
+	color: var(--accent);
 	background: #ffffff;
 }
 
