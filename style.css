@@ -1454,7 +1454,7 @@ a.button {
 
 .cat-links a:hover, .comments-link a:hover, .edit-link a:hover {
 	border-color: var(--light);
-	color: var(--main);
+	color: var(--accent);
 }
 
 .post-links {
