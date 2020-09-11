@@ -1015,7 +1015,7 @@ a.to-top {
 }
 
 .comment-body {
-  margin-bottom: 60px;
+  margin-bottom: 2em;
 }
 
 ol.comment-list {
@@ -1108,7 +1108,6 @@ img.avatar {
 }
 
 .reply {
-  margin-bottom: 2em;
   margin-left: 40px;
 }
 
