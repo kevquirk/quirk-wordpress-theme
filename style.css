@@ -298,7 +298,7 @@ ul.social li a, a:visited {
 }
 
 ul.social li a:hover, a:active {
-	opacity: 0.7;
+	color: var(--accent);
 }
 
 /* Formats the list on the identities page */
