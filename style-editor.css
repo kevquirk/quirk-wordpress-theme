@@ -172,23 +172,24 @@ figcaption {
 --------------------------------------------------------------*/
 h2.rich-text.block-editor-rich-text__editable {
 	margin-top: 2em;
-	font-size: 32px;
+	font-size: 1.75em;
 }
 
 h3.rich-text.block-editor-rich-text__editable {
-	font-size: 28px;
+  margin-top: 2em;
+	font-size: 1.5em;
 }
 
 h4.rich-text.block-editor-rich-text__editable {
-	font-size: 24px;
+	font-size: 1.3em;
 }
 
 h5.rich-text.block-editor-rich-text__editable {
-	font-size: 20px;
+	font-size: 1.1em;
 }
 
 h6.rich-text.block-editor-rich-text__editable {
-	font-size: 18px;
+	font-size: 1em;
 }
 
 .has-medium-font-size {
