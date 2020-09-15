@@ -124,7 +124,7 @@ ul,
 ol {
   font-family: "merriweather", Georgia, serif !important;
   color: var(--main);
-  font-size: 18px;
+  font-size: 1.15em;
 }
 
 pre {
