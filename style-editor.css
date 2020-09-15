@@ -81,6 +81,11 @@ Tags:
      font-display: swap;
  }
 
+ /* Global Width */
+ .wp-block {
+   max-width: 621px
+ }
+
 /* Main typography elements */
 
 /* Set fonts */
