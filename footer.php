@@ -15,7 +15,7 @@
 
 		<a href="/disclaimer">Disclaimer</a> | <a href="/license-information">License Info</a> | <a href="/privacy">Privacy</a> | <a href="/buy-me-a-coffee">Coffee?</a></p>
 
-		<p><a class="menu" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Back To Top <i class="fa fa-arrow-up" aria-hidden="true"></i></a></p>
+		<p><a class="menu" href="#top"><i class="las la-chevron-up la-lg"></i> Back To Top <i class="las la-chevron-up la-lg"></i></a></p>
 
 		<!-- INDIEWEB H-CARD use this link to verify it's ok - https://indiewebify.me/validate-h-card/ -->
 		<section style="display: none;" class="h-card">

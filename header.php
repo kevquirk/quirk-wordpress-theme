@@ -16,7 +16,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/merriweather/merriweather.css' ); ?>" type='text/css' media='all' />
 	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/fira/fira.css' ); ?>" type='text/css' media='all' />
-	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/forkawesome/css/fork-awesome.min.css' ); ?>" type='text/css' media='all' />
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 <!-- START PLAUSIBLE ANALYTICS -->
 <script async defer data-domain="kevq.uk" src="https://stats.kevq.uk/js/index.js"></script>
@@ -58,7 +58,7 @@
 				<?php
 			else :
 				?>
-				<a class="head-search" href="/search"><i class="fa fa-search la-lg"></i></a>
+				<a class="head-search" href="/search"><i class="las la-search la-lg"></i></a>
 				<a class="menu" href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/menu/' ) : home_url( '/?menu' ) ) ); ?>"><?php esc_html_e( 'Menu', 'susty' ); ?></a>
 				<?php
 			endif;
