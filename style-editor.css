@@ -18,7 +18,7 @@ Tags:
     --light: #666;
     --lighter: #f3f3f3;
 		--border: #e6e6e6;
-   	--bg: #ffffff;
+   	--bg: #fafafa;
  		--code: #f3f3f3;
  }
 
@@ -389,7 +389,7 @@ p.has-background {
 }
 .has-blue-color code {
 	color: var(--accent);
-	background: #ffffff;
+	background: #fafafa;
 }
 
 /** Green colours **/
@@ -411,7 +411,7 @@ p.has-background {
 }
 .has-green-color code {
 	color: #345f41;
-	background: #ffffff;
+	background: #fafafa;
 }
 
 /** Orange colours **/
@@ -456,7 +456,7 @@ p.has-background {
 }
 .has-red-color code {
 	color: #c1392b;
-	background: #ffffff;
+	background: #fafafa;
 }
 
 /** Grey colours **/
@@ -479,26 +479,26 @@ p.has-background {
 }
 .has-grey-color code {
 	color: #333333;
-	background: #ffffff;
+	background: #fafafa;
 }
 
 /** White colours **/
 .has-white-background-color {
-	background-color: #ffffff !important;
+	background-color: #fafafa !important;
 	border: 1px solid --var(main);
 }
 .has-white-color {
-	color: #ffffff;
+	color: #fafafa;
 }
 .has-white-color a, .has-white-color a:visited {
-	color: #ffffff;
-	border-bottom: 2px solid #ffffff !important;
+	color: #fafafa;
+	border-bottom: 2px solid #fafafa !important;
   background: none;
   border-radius: 0;
 }
 .has-white-color a:hover {
-	color: #ffffff;
-	border-bottom: 2px dotted #ffffff !important;
+	color: #fafafa;
+	border-bottom: 2px dotted #fafafa !important;
 }
 .has-white-color code {
 	color: #333333;
