@@ -118,9 +118,7 @@ h6.rich-text.block-editor-rich-text__editable,
 
 .editor-block-list__layout .editor-block-list__block p,
 .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
-.block-editor-block-list__layout.is-root-container,
-ul,
-ol {
+.block-editor-block-list__layout.is-root-container {
   font-family: "merriweather", Georgia, serif !important;
   color: var(--main);
   font-size: 1.15em;
