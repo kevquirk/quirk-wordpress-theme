@@ -263,3 +263,11 @@ return $query;
 }
 
 add_filter( 'pre_get_posts', 'exclude_category_home' );
+
+// Add syntax highlighting with Prism
+function add_prism()
+{
+    wp_enqueue_style( 'prism-css',  get_stylesheet_directory_uri() . '/prism.css' );
+    wp_enqueue_script( 'prism-js',  get_stylesheet_directory_uri() . '/prism.js', [], false, true );
+}
+add_action( 'wp_enqueue_scripts', 'add_prism' );
