@@ -20,7 +20,7 @@ Tags:
     --lighter: #f3f3f3;
 		--border: #e6e6e6;
    	--bg: #fafafa;
- 		--code: #f3f3f3
+ 		--code: #272822
  }
 
  /* Define colours for auto dark mode */
@@ -32,7 +32,7 @@ Tags:
 			--lighter: #666;
 			--border: #e6e6e6;
 			--bg: #333333;
-			--code: #4d4d4d
+			--code: #272822
     }
 }
 
@@ -143,7 +143,7 @@ hr {
 
 pre {
 	background: var(--code);
-	color: var(--main);
+	color: #fafafa;
 	border-radius: 4px;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -314,7 +314,7 @@ ul.identity-list i.fa {
   padding: 5px;
   font-size: 1.2em;
   border-bottom: 0;
-	background: var(--code);
+	background: var(--lighter);
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -640,7 +640,7 @@ address {
 }
 
 code, kbd, tt, var {
-	color: var(--main);
+	color: #fafafa;
 	background: var(--code);
 	padding: 2px 7px 2px 7px;
 	border-radius: 4px;
@@ -653,7 +653,7 @@ code, kbd, tt, var {
 
 pre code:not(.hljs):not([class*="language-"]) {
     background: var(--code);
-    color: var(--main);
+    color: #fafafa;
     line-height: 1.25;
     border-radius: 4px;
 }
@@ -738,7 +738,7 @@ td {
 
 /* Format table stripes */
 .wp-block-table.is-style-stripes tr:nth-child(odd) {
-  background: var(--code) !important;
+  background: var(--lighter) !important;
   color: var(--main) !important;
 }
 
@@ -1030,7 +1030,7 @@ ol.comment-list {
 }
 
 .comment-content {
-	background: var(--code);
+	background: var(--lighter);
 	margin-left: 40px;
 	padding: 5px 18px 0px;
 	border-radius: 15px;
@@ -1135,7 +1135,7 @@ p.comment-note,
 .post-newsletter {
   max-width: 700px;
   margin: 0 auto;
-  background: var(--code);
+  background: var(--lighter);
   color: var(--main);
   padding: 25px;
   outline: dashed 2px var(--main);
