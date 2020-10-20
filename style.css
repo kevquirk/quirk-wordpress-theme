@@ -20,7 +20,7 @@ Tags:
     --lighter: #eaeaea;
 		--border: #e6e6e6;
    	--bg: #fafafa;
- 		--code: #272822
+ 		--code: #272822;
  }
 
  /* Define colours for auto dark mode */
@@ -32,7 +32,7 @@ Tags:
 			--lighter: #666;
 			--border: #e6e6e6;
 			--bg: #333333;
-			--code: #272822
+			--code: #272822;
     }
 }
 

@@ -19,7 +19,7 @@ Tags:
     --lighter: #f3f3f3;
 		--border: #e6e6e6;
    	--bg: #fafafa;
- 		--code: #f3f3f3;
+ 		--code: #272822;
  }
 
  /* Custom fonts */
@@ -126,7 +126,7 @@ h6.rich-text.block-editor-rich-text__editable,
 
 pre {
 	background: var(--code);
-	color: var(--main);
+	color: var(--bg);
 	border-radius: 4px;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -235,7 +235,7 @@ dfn, cite, i {
 }
 
 code, kbd, tt, var {
-	color: var(--main);
+	color: var(--bg);
 	background: var(--code);
 	padding: 2px 7px 2px 7px;
 	border-radius: 4px;
@@ -243,7 +243,7 @@ code, kbd, tt, var {
 
 pre code:not(.hljs):not([class*="language-"]) {
     background: var(--code);
-    color: var(--main);
+    color: var(--bg);
     line-height: 1.25;
     border-radius: 4px;
 }
@@ -269,7 +269,7 @@ td {
 /* Format table stripes */
 .wp-block-table.is-style-stripes tr:nth-child(odd) {
   background: var(--code) !important;
-  color: var(--main) !important;
+  color: var(--bg) !important;
 }
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
