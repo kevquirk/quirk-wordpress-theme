@@ -71,14 +71,6 @@ Tags:
      font-style: normal;
      font-display: swap;
  }
- @font-face {
-     font-family: 'firacode';
-     src: url('/wp-content/themes/quirk/fonts/fira/firacode-regular-webfont.woff2') format('woff2'),
-          url('/wp-content/themes/quirk/fonts/fira/firacode-regular-webfont.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-     font-display: swap;
- }
 
  /* Global Width */
  .wp-block {
@@ -239,6 +231,14 @@ code, kbd, tt, var {
 	background: var(--code);
 	padding: 2px 7px 2px 7px;
 	border-radius: 4px;
+}
+
+pre,
+code,
+kbd,
+tt,
+var {
+	font-family: Consolas, monaco, "Ubuntu Mono", "Liberation Mono", "Courier New", Courier, monospace;
 }
 
 pre code:not(.hljs):not([class*="language-"]) {
