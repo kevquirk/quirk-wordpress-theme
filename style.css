@@ -17,7 +17,7 @@ Tags:
     --main: #333333;
     --adhover: #003f6c;
     --light: #555;
-    --lighter: #f3f3f3;
+    --lighter: #eaeaea;
 		--border: #e6e6e6;
    	--bg: #fafafa;
  		--code: #272822
@@ -1011,10 +1011,18 @@ a.to-top {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-.comment-content a {
+.comment-content a, .comment-content a:visited {
+  color: var(--accent);
+  border-bottom: 2px solid;
+  border-radius: 0;
 	word-wrap: break-word;
   background: none;
   padding: 0;
+}
+
+.comment-content a:hover, .comment-content a:active {
+  color: var(--accent);
+  border-bottom: 2px dotted;
 }
 
 .comment-body {
