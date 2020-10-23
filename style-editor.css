@@ -223,13 +223,12 @@ td {
 
 /* Format table stripes */
 .wp-block-table.is-style-stripes tr:nth-child(odd) {
-  background: var(--code) !important;
-  color: var(--bg) !important;
+  background: var(--lighter) !important;
+  color: var(--main) !important;
 }
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
   background: var(--bg) !important;
-  color: var(--main) !important;
 }
 
 .wp-block-table table {
