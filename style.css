@@ -626,8 +626,8 @@ em {
 
 blockquote {
 	margin-left: 2em;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+	margin-bottom: 2.5rem;
+	margin-top: 2.5rem;
 	padding: .4rem .8rem;
 	border-left: .35rem solid var(--accent);
 	color: var(--light);
