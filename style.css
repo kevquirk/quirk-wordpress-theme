@@ -650,7 +650,11 @@ code, kbd, tt, var {
 
 /* Fix padding in code blocks */
 .wp-block-code code {
-    padding: 0;
+  padding: 0;
+}
+
+.wp-block-code {
+  margin-bottom: 1.5em !important;
 }
 
 pre code:not(.hljs):not([class*="language-"]) {
