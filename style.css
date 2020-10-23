@@ -628,8 +628,6 @@ blockquote {
 	padding: .4rem .8rem;
 	border-left: .35rem solid var(--accent);
 	color: var(--light);
-	font-style: italic;
-  font-size: 0.9em;
 }
 
 cite {
