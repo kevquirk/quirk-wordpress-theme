@@ -86,7 +86,8 @@ p.has-background,
 }
 
 p,
-li,
+ul,
+ol,
 .response blockquote {
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   margin-bottom: 1.5em;
