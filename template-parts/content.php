@@ -23,6 +23,7 @@
 			?>
 		</div>
 			<div class="entry-meta">
+				<i class="las la-calendar"></i>
 				<?php
 				susty_wp_posted_on();
 				?>
