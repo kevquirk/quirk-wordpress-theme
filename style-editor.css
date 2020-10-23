@@ -130,6 +130,10 @@ h6.rich-text.block-editor-rich-text__editable {
 	font-size: 1em;
 }
 
+p.rich-text.block-editor-rich-text__editable {
+	line-height: 1.5;
+}
+
 .has-medium-font-size {
   font-weight: bold;
   font-size: 1.3em !important;
