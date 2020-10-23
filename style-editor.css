@@ -84,9 +84,12 @@ strong {
 
 /** Images **/
 .wp-block-image img {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 8px;
-    margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+}
+
+.wp-block-img {
+  margin: 1.5em 0;
 }
 
 .wp-block-image figcaption,
@@ -95,8 +98,7 @@ figcaption {
 	color: var(--light);
 	font-size: 0.9rem;
 	text-align: center;
-  font-family: "fira", arial, sans-sans-serif;
-  font-variant-ligatures: no-common-ligatures;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Formats the feature image correctly */
@@ -174,7 +176,7 @@ em {
 	color: var(--light);
 	font-style: italic;
   font-size: 16px;
-  font-family: "merriweather", Georgia, serif !important;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important;
 }
 
 dfn, cite, i {
@@ -312,8 +314,7 @@ a.button {
 .has-background {
   display: block !important;
   margin: 0 auto !important;
-  font-family: "fira", arial, sans-serif;
-  font-variant-ligatures: no-common-ligatures;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p.has-background {
