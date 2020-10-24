@@ -92,10 +92,6 @@ strong {
   border-radius: 8px;
 }
 
-.wp-block-image {
-  margin: 1.5em 0;
-}
-
 .wp-block-image figcaption,
 figcaption {
 	margin-top: 0;
