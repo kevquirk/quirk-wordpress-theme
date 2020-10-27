@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5, h6 {
-	line-height: 1;
+	line-height: 1.1;
 }
 
 h2 {
@@ -771,7 +771,7 @@ input[type="submit"] {
   color: var(--bg);
 	border: none;
 	border-radius: 4px;
-	line-height: 1;
+	line-height: 1.1;
 	padding: .8em .8em;
 	font-size: 0.8em;
 	transition: 0.4s;
@@ -1374,13 +1374,13 @@ svg * {
 	color: var(--main);
 	background: none;
 	transition: 0.4s;
-	line-height: 1;
+	line-height: 1.1;
 	padding: 0;
 }
 
 .post-title h1, .post-title h2 {
 	margin: 0 0 .1em 0;
-	line-height: 1;
+	line-height: 1.1;
 }
 
 .post-title a:hover, .post-title a:focus, .post-title a:active, .entry-title a:hover, .entry-title a:visited {
@@ -1395,19 +1395,19 @@ svg * {
   background: none;
 	margin: 0 0 .1em 0;
 	border: none;
-	line-height: 1;
+	line-height: 1.1;
 	transition: 0.4s;
 }
 
 article > header > h1 {
 	font-size: 2.4em;
-	line-height: 1;
+	line-height: 1.1;
 	margin: 0 0 .4em 0;
 }
 
 article > header > h2 {
 	font-size: 1.75em;
-	line-height: 1;
+	line-height: 1.1;
 	margin: 0 0 .4em 0;
 }
 
