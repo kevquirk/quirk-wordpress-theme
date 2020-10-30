@@ -22,6 +22,54 @@ Tags:
  		--code: #272822;
  }
 
+ /* Custom fonts */
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black.woff') format('woff');
+     font-weight: 900;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black-italic.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-black-italic.woff') format('woff');
+     font-weight: 900;
+     font-style: italic;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'merriweather';
+     src: url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light-italic.woff2') format('woff2'),
+          url('/wp-content/themes/quirk/fonts/merriweather/merriweather-light-italic.woff') format('woff');
+     font-weight: 300;
+     font-style: italic;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'fira';
+     src: url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-bold.woff') format('woff');
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+ }
+ @font-face {
+     font-family: 'fira';
+     src: url('/wp-content/themes/quirk/fonts/fira/firasanscondensed-regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+
  /* Global Width */
  .wp-block {
    max-width: 621px
@@ -40,12 +88,10 @@ h5.rich-text.block-editor-rich-text__editable,
 h6.rich-text.block-editor-rich-text__editable,
 .has-medium-font-size,
 #post-title-0,
-table,
-.wp-block-image figcaption,
-figcaption,
-.has-background {
+table {
 	color: var(--main);
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "fira", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 .editor-block-list__layout .editor-block-list__block,
@@ -62,11 +108,10 @@ h6.rich-text.block-editor-rich-text__editable,
 
 .editor-block-list__layout .editor-block-list__block p,
 .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
-.block-editor-block-list__layout.is-root-container,
-.wp-block-quote {
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important;
+.block-editor-block-list__layout.is-root-container {
+  font-family: "merriweather", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important;
   color: var(--main);
-  font-size: 1.2em;
+  font-size: 1.15em;
 }
 
 pre {
@@ -88,8 +133,8 @@ strong {
 
 /** Images **/
 .wp-block-image img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
 }
 
 .wp-block-image figcaption,
@@ -98,6 +143,8 @@ figcaption {
 	color: var(--light);
 	font-size: 0.9rem;
 	text-align: center;
+  font-family: "fira", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 /* Formats the feature image correctly */
@@ -130,11 +177,6 @@ h5.rich-text.block-editor-rich-text__editable {
 
 h6.rich-text.block-editor-rich-text__editable {
 	font-size: 1em;
-}
-
-p.rich-text.block-editor-rich-text__editable {
-	line-height: 1.5;
-  margin-bottom: 1.5em;
 }
 
 .has-medium-font-size {
@@ -175,6 +217,7 @@ em {
 	color: var(--light);
 	font-style: italic;
   font-size: 16px;
+  font-family: "merriweather", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif !important;
 }
 
 dfn, cite, i {
@@ -215,7 +258,7 @@ big {
 }
 
 table {
-	margin: 1.5em 0;
+	margin: 0 0 1.5em;
 	width: 100%;
 }
 
@@ -225,17 +268,18 @@ td {
 
 /* Format table stripes */
 .wp-block-table.is-style-stripes tr:nth-child(odd) {
-  background: var(--lighter) !important;
-  color: var(--main) !important;
+  background: var(--code) !important;
+  color: var(--bg) !important;
 }
 
 .wp-block-table.is-style-stripes tr:nth-child(even) {
   background: var(--bg) !important;
+  color: var(--main) !important;
 }
 
 .wp-block-table table {
     border: 1px solid var(--main) !important;
-    border-radius: 8px !important;
+    border-radius: 8px;
 }
 
 /*--------------------------------------------------------------
@@ -312,6 +356,8 @@ a.button {
 .has-background {
   display: block !important;
   margin: 0 auto !important;
+  font-family: "fira", Frutiger, "Frutiger Linotype", Univers, Calibri, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: no-common-ligatures;
 }
 
 p.has-background {

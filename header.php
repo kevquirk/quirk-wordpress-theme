@@ -14,6 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() . '/images/favicon.png' ); ?>"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/merriweather/merriweather.css' ); ?>" type='text/css' media='all' />
+	<link rel='stylesheet'  href="<?php echo esc_url( get_template_directory_uri() . '/fonts/fira/fira.css' ); ?>" type='text/css' media='all' />
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 <!-- START PLAUSIBLE ANALYTICS -->
