@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'fira';
+    src: url('firasanscondensed-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'fira';
+    src: url('firasanscondensed-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
