@@ -15,7 +15,7 @@ get_header();
 			<header>
 				<?php
 				echo( '<h1 class="notes-title"><i class="las la-edit la-lg"></i>My Notes</h1>' );
-				echo( '<p>I use this page to share my opinions, thoughts and posts on more generalist topics, as well as my other interests.</p>');
+				echo( '<p>I use this page to share my opinions, thoughts and posts on more generalist topics, as well as my other interests.</p><br>');
 				?>
 			</header>
 
